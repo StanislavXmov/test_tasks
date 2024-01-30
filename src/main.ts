@@ -2,6 +2,7 @@ import { selectionSort } from './algs/selectionSort';
 import { bubbleSort } from './algs/bubbleSort';
 import { cocktailSort } from './algs/cocktailSort';
 import { twoSum, twoSum2 } from './task/twoSum';
+import { convertZigzag, convertZigzag2 } from './task/convertZigzag';
 
 // console.log('test_tasks');
 // const arr = new Array(1000).fill(null).map(() => Math.round(Math.random() * 100));
@@ -26,5 +27,13 @@ import { twoSum, twoSum2 } from './task/twoSum';
 // console.timeEnd();
 
 // console.log(twoSum([2,7,11,15], 9));
-console.log(twoSum2([3,2,4], 6));
+// console.log(twoSum2([3,2,4], 6));
+
+// console.log(convertZigzag('PAYPALISHIRING', 3));
+// console.log(convertZigzag('PAYPALISHIRING', 4));
+// console.log(convertZigzag('A', 1));
+
+// console.log(convertZigzag2('PAYPALISHIRING', 3));
+// console.log(convertZigzag2('PAYPALISHIRING', 4));
+// console.log(convertZigzag2('A', 1));
 
