@@ -2,6 +2,7 @@
 // import { bubbleSort } from './algs/bubbleSort';
 // import { cocktailSort } from './algs/cocktailSort';
 import { insertionSort } from './algs/insertionSort';
+import { mergeSort } from './algs/mergeSort';
 // import { twoSum, twoSum2 } from './task/twoSum';
 // import { convertZigzag, convertZigzag2 } from './task/convertZigzag';
 
@@ -27,10 +28,16 @@ import { insertionSort } from './algs/insertionSort';
 // // console.log(selectionSort([3, 2, 4, 1, 5, 9, 1, 6, 5, 3, 3]));
 // console.timeEnd();
 
+// console.time();
+// // console.log(insertionSort([3, 2, 4, 1, 5, 9, 1, 6, 5, 3, 3]));
+// console.log(insertionSort([23, 1, 10, 5, 2]));
+// // console.log(insertionSort(testArray1));
+// console.timeEnd();
+
 console.time();
-// console.log(insertionSort([3, 2, 4, 1, 5, 9, 1, 6, 5, 3, 3]));
-console.log(insertionSort([23, 1, 10, 5, 2]));
-// console.log(insertionSort(testArray1));
+console.log(mergeSort([3, 2, 4, 1, 5, 9, 1, 6, 5, 3, 3]));
+// console.log(mergeSort([23, 1, 10, 5, 2]));
+// console.log(mergeSort(testArray1));
 console.timeEnd();
 
 // console.log(twoSum([2,7,11,15], 9));
