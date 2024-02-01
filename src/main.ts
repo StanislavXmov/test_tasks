@@ -1,10 +1,11 @@
 // import { selectionSort } from './algs/selectionSort';
 // import { bubbleSort } from './algs/bubbleSort';
 // import { cocktailSort } from './algs/cocktailSort';
-import { insertionSort } from './algs/insertionSort';
-import { mergeSort } from './algs/mergeSort';
+// import { insertionSort } from './algs/insertionSort';
+// import { mergeSort } from './algs/mergeSort';
 // import { twoSum, twoSum2 } from './task/twoSum';
 // import { convertZigzag, convertZigzag2 } from './task/convertZigzag';
+import { isPalindrome, isPalindrome2 } from './task/isPalindrome';
 
 // console.log('test_tasks');
 // const arr = new Array(10000).fill(null).map(() => Math.round(Math.random() * 100));
@@ -34,11 +35,11 @@ import { mergeSort } from './algs/mergeSort';
 // // console.log(insertionSort(testArray1));
 // console.timeEnd();
 
-console.time();
-console.log(mergeSort([3, 2, 4, 1, 5, 9, 1, 6, 5, 3, 3]));
-// console.log(mergeSort([23, 1, 10, 5, 2]));
-// console.log(mergeSort(testArray1));
-console.timeEnd();
+// console.time();
+// console.log(mergeSort([3, 2, 4, 1, 5, 9, 1, 6, 5, 3, 3]));
+// // console.log(mergeSort([23, 1, 10, 5, 2]));
+// // console.log(mergeSort(testArray1));
+// console.timeEnd();
 
 // console.log(twoSum([2,7,11,15], 9));
 // console.log(twoSum2([3,2,4], 6));
@@ -51,3 +52,5 @@ console.timeEnd();
 // console.log(convertZigzag2('PAYPALISHIRING', 4));
 // console.log(convertZigzag2('A', 1));
 
+// console.log(isPalindrome(121));
+console.log(isPalindrome2(121));
