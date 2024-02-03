@@ -7,7 +7,8 @@
 // import { convertZigzag, convertZigzag2 } from './task/convertZigzag';
 // import { isPalindrome, isPalindrome2 } from './task/isPalindrome';
 // import { quickSort } from './algs/quickSort';
-import { binarySearch } from './algs/binarySearch';
+// import { binarySearch } from './algs/binarySearch';
+import { maxArea, maxArea2 } from './task/maxArea';
 
 // console.log('test_tasks');
 // const arr = new Array(10000).fill(null).map(() => Math.round(Math.random() * 100));
@@ -49,7 +50,7 @@ import { binarySearch } from './algs/binarySearch';
 // // console.log(quickSort(testArray1));
 // console.timeEnd();
 
-console.log(binarySearch([1, 5, 7, 9, 13, 14, 21], 7));
+// console.log(binarySearch([1, 5, 7, 9, 13, 14, 21], 7));
 
 // console.log(twoSum([2,7,11,15], 9));
 // console.log(twoSum2([3,2,4], 6));
@@ -64,3 +65,10 @@ console.log(binarySearch([1, 5, 7, 9, 13, 14, 21], 7));
 
 // console.log(isPalindrome(121));
 // console.log(isPalindrome2(121));
+
+// console.log(maxArea([1,8,6,2,5,4,8,3,7]));
+// console.log(maxArea([1,1]));
+
+console.log(maxArea2([1,8,6,2,5,4,8,3,7]));
+console.log(maxArea2([1,1]));
+
