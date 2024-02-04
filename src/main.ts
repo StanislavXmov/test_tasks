@@ -8,7 +8,8 @@
 // import { isPalindrome, isPalindrome2 } from './task/isPalindrome';
 // import { quickSort } from './algs/quickSort';
 // import { binarySearch } from './algs/binarySearch';
-import { maxArea, maxArea2 } from './task/maxArea';
+// import { maxArea, maxArea2 } from './task/maxArea';
+import { romanToInt } from './task/romanToInt';
 
 // console.log('test_tasks');
 // const arr = new Array(10000).fill(null).map(() => Math.round(Math.random() * 100));
@@ -69,6 +70,10 @@ import { maxArea, maxArea2 } from './task/maxArea';
 // console.log(maxArea([1,8,6,2,5,4,8,3,7]));
 // console.log(maxArea([1,1]));
 
-console.log(maxArea2([1,8,6,2,5,4,8,3,7]));
-console.log(maxArea2([1,1]));
+// console.log(maxArea2([1,8,6,2,5,4,8,3,7]));
+// console.log(maxArea2([1,1]));
+
+console.log(romanToInt('III'));
+console.log(romanToInt('LVIII'));
+console.log(romanToInt('MCMXCIV'));
 
