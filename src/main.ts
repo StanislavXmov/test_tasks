@@ -9,7 +9,9 @@
 // import { quickSort } from './algs/quickSort';
 // import { binarySearch } from './algs/binarySearch';
 // import { maxArea, maxArea2 } from './task/maxArea';
-import { romanToInt } from './task/romanToInt';
+// import { romanToInt } from './task/romanToInt';
+
+import { calculateStatistics, filmsData } from './task/calculateStatistics';
 
 // console.log('test_tasks');
 // const arr = new Array(10000).fill(null).map(() => Math.round(Math.random() * 100));
@@ -73,7 +75,9 @@ import { romanToInt } from './task/romanToInt';
 // console.log(maxArea2([1,8,6,2,5,4,8,3,7]));
 // console.log(maxArea2([1,1]));
 
-console.log(romanToInt('III'));
-console.log(romanToInt('LVIII'));
-console.log(romanToInt('MCMXCIV'));
+// console.log(romanToInt('III'));
+// console.log(romanToInt('LVIII'));
+// console.log(romanToInt('MCMXCIV'));
+
+console.log(calculateStatistics(filmsData));
 
