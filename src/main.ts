@@ -10,8 +10,8 @@
 // import { binarySearch } from './algs/binarySearch';
 // import { maxArea, maxArea2 } from './task/maxArea';
 // import { romanToInt } from './task/romanToInt';
-
-import { calculateStatistics, filmsData } from './task/calculateStatistics';
+// import { calculateStatistics, filmsData } from './task/calculateStatistics';
+import {Player, data, gameField, steps} from './task/player';
 
 // console.log('test_tasks');
 // const arr = new Array(10000).fill(null).map(() => Math.round(Math.random() * 100));
@@ -79,5 +79,9 @@ import { calculateStatistics, filmsData } from './task/calculateStatistics';
 // console.log(romanToInt('LVIII'));
 // console.log(romanToInt('MCMXCIV'));
 
-console.log(calculateStatistics(filmsData));
+// console.log(calculateStatistics(filmsData));
+const player1 = new Player(0, 0, 100, gameField);
+player1.processSteps(steps);
+const result = player1.getInfo();
 
+console.log(result);

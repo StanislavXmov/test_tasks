@@ -186,6 +186,6 @@ const result = {
   ]
 };
 
-test('romanToInt', () => {
+test('calculateStatistics', () => {
   expect(calculateStatistics(filmsData)).toStrictEqual(result);
 });
