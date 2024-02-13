@@ -13,6 +13,8 @@
 // import { calculateStatistics, filmsData } from './task/calculateStatistics';
 // import {Player, data, gameField, steps} from './task/player';
 
+import { TreeNode, lowestCommonAncestor } from "./task/lowestCommonAncestor";
+
 // import {fibonacci, fibonacciWithMemoization} from './task/fibonacciWithMemoization';
 
 // console.log('test_tasks');
@@ -95,3 +97,22 @@
 // console.time();
 // console.log(fibonacciWithMemoization(5));
 // console.timeEnd();
+
+// const root = new TreeNode(
+//   6, 
+//   new TreeNode(
+//     2, 
+//     new TreeNode(0, null, null),
+//     new TreeNode(4, 
+//       new TreeNode(3, null, null),
+//       new TreeNode(5, null, null)
+//     )
+//   ), 
+//   new TreeNode(
+//     8, 
+//     new TreeNode(7, null, null), 
+//     new TreeNode(9, null, null)
+//   )
+// );
+
+// console.log(root, lowestCommonAncestor(root, new TreeNode(2, null, null), new TreeNode(8, null, null))?.val);
