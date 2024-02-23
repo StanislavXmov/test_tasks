@@ -19,3 +19,23 @@ export const getCoins = (n: number, coin: number = 25): number => {
   }
   return ways;
 }
+
+export const toGet = (n: number): number[] | -1 => {
+  const coins = [100, 50, 20, 10];
+  const result: number[] = [];
+
+  if (n > 0) {
+    for (let i = 0; i < coins.length; i++) {
+      const coin = coins[i];
+
+      while (n - coin >= 0) {
+        n -= coin;
+        result.push(coin);
+      }
+    }
+  } else {
+    return -1;
+  }
+
+  return result;
+}

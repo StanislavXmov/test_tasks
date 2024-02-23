@@ -15,6 +15,7 @@
 // import { TreeNode, lowestCommonAncestor } from "./task/lowestCommonAncestor";
 
 // import { decode } from './task/decode';
+// import { getCoins, toGet } from './task/coins';
 
 // import {fibonacci, fibonacciWithMemoization} from './task/fibonacciWithMemoization';
 
@@ -117,3 +118,4 @@
 // );
 
 // console.log(root, lowestCommonAncestor(root, new TreeNode(2, null, null), new TreeNode(8, null, null))?.val);
+// console.log(toGet(30));
