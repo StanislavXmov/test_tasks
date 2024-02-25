@@ -18,6 +18,7 @@
 // import { getCoins, toGet } from './task/coins';
 
 // import {fibonacci, fibonacciWithMemoization} from './task/fibonacciWithMemoization';
+import { decode } from './task/decodeRLE';
 
 // console.log('test_tasks');
 // const arr = new Array(10000).fill(null).map(() => Math.round(Math.random() * 100));
@@ -119,3 +120,4 @@
 
 // console.log(root, lowestCommonAncestor(root, new TreeNode(2, null, null), new TreeNode(8, null, null))?.val);
 // console.log(toGet(30));
+console.log(decode('3a12b3c'));
