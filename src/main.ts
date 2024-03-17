@@ -19,6 +19,7 @@
 
 // import {fibonacci, fibonacciWithMemoization} from './task/fibonacciWithMemoization';
 import { decode } from './task/decodeRLE';
+import { lcs } from './task/lcs';
 
 // console.log('test_tasks');
 // const arr = new Array(10000).fill(null).map(() => Math.round(Math.random() * 100));
@@ -120,4 +121,10 @@ import { decode } from './task/decodeRLE';
 
 // console.log(root, lowestCommonAncestor(root, new TreeNode(2, null, null), new TreeNode(8, null, null))?.val);
 // console.log(toGet(30));
-console.log(decode('3a12b3c'));
+// console.log(decode('3a12b3c'));
+
+// const s1 = 'abacaba';
+// const s2 = 'abcabc';
+
+// console.log(lcs(s1, s2));
+
