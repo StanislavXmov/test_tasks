@@ -14,13 +14,15 @@
 // import {Player, data, gameField, steps} from './task/player';
 // import { TreeNode, lowestCommonAncestor } from "./task/lowestCommonAncestor";
 
+import { invertTree } from "./algs/invertTree";
+
 // import { decode } from './task/decode';
 // import { getCoins, toGet } from './task/coins';
 
 // import {fibonacci, fibonacciWithMemoization} from './task/fibonacciWithMemoization';
-import { decode } from './task/decodeRLE';
-import { getPath } from './task/getPath';
-import { lcs } from './task/lcs';
+// import { decode } from './task/decodeRLE';
+// import { getPath } from './task/getPath';
+// import { lcs } from './task/lcs';
 
 // console.log('test_tasks');
 // const arr = new Array(10000).fill(null).map(() => Math.round(Math.random() * 100));
@@ -128,12 +130,31 @@ import { lcs } from './task/lcs';
 // const s2 = 'abcabc';
 
 // console.log(lcs(s1, s2));
-const maze = [
-  [1, 1, 1, 1],
-  [0, 1, 1, 1],
-  [1, 1, 1, 1],
-  [0, 0, 1, 1]
-];
-console.log(getPath(maze));
+// const maze = [
+//   [1, 1, 1, 1],
+//   [0, 1, 1, 1],
+//   [1, 1, 1, 1],
+//   [0, 0, 1, 1]
+// ];
+// console.log(getPath(maze));
+
+// const root = {
+//   val: 4,
+//   left: {val: 2, left: {
+//     val: 1, left: null, right: null,
+//   }, right: {
+//     val: 3, left: null, right: null,
+//   }},
+//   right: {val: 7, left: {
+//     val: 6, left: null, right: null,
+//   }, right: {
+//     val: 9, left: null, right: null,
+//   }},
+// }
+// console.log(root);
+
+
+// invertTree(root);
+// console.log(root);
 
 
