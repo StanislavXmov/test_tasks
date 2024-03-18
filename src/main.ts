@@ -19,6 +19,7 @@
 
 // import {fibonacci, fibonacciWithMemoization} from './task/fibonacciWithMemoization';
 import { decode } from './task/decodeRLE';
+import { getPath } from './task/getPath';
 import { lcs } from './task/lcs';
 
 // console.log('test_tasks');
@@ -127,4 +128,12 @@ import { lcs } from './task/lcs';
 // const s2 = 'abcabc';
 
 // console.log(lcs(s1, s2));
+const maze = [
+  [1, 1, 1, 1],
+  [0, 1, 1, 1],
+  [1, 1, 1, 1],
+  [0, 0, 1, 1]
+];
+console.log(getPath(maze));
+
 
