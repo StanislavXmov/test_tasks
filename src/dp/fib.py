@@ -1,5 +1,6 @@
 class Solution:
-  def fib(self, n: int) -> int:
+  @staticmethod
+  def fib(n: int) -> int:
     f0 = 0
     f1 = 1
 
@@ -10,9 +11,9 @@ class Solution:
       return 1
 
     while n > 1:
-      f1, f0 = f0 + f1, f1
+      (f1, f0) = (f0 + f1, f1)
       n -= 1
     
     return f1
   
-print(Solution.fib(Solution, 5))
+print(Solution.fib(5))
