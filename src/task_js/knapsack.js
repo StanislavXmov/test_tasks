@@ -27,12 +27,12 @@ function solution(items, weight) {
   return price;
 }
 
-const items = [
-  { name: 'backpack', weight: 6, cost: 30 },
-  { name: 'headphones', weight: 1, cost: 20 },
-  { name: 'book', weight: 4, cost: 20 },
-  { name: 'phone', weight: 3, cost: 15 },
-];
+// const items = [
+//   { name: 'backpack', weight: 6, cost: 30 },
+//   { name: 'headphones', weight: 1, cost: 20 },
+//   { name: 'book', weight: 4, cost: 20 },
+//   { name: 'phone', weight: 3, cost: 15 },
+// ];
 
 // console.log(solution(items, 9)); // 55
 // console.log(solution(items, 6)); // 40
@@ -54,6 +54,13 @@ const items = [
 
 // // console.log(solution(items, 4)); // 4
 // console.log(solution(items, 1)); // 1
+
+const items = [
+  { name: 'backpack', weight: 6, cost: 30 },
+  { name: 'headphones', weight: 1, cost: 20 },
+  { name: 'book', weight: 4, cost: 20 },
+  { name: 'phone', weight: 3, cost: 15 },
+];
 
 const solutionDP = (items, maxCapacity) => {
   // создаем матрицу
