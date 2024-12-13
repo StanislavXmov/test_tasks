@@ -1,4 +1,4 @@
-const loopInArray = <T>(list: T[]) => {
+export const loopInArray = <T>(list: T[]) => {
   const equality = <T>(list1: T[], list2: T[]) => {
     for (let i = 0; i < list1.length; i++) {
       if (list1[i] !== list2[i]) {
