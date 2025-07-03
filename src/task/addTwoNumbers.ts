@@ -4,6 +4,35 @@ export function addTwoNumbers(
   l1: ListNode | null,
   l2: ListNode | null
 ): ListNode | null {
+  const dummyHead = new ListNode(0);
+  let _l1 = l1,
+    _l2 = l2,
+    carry = 0,
+    current = dummyHead;
+
+  while (_l1 || _l2 || carry) {
+    const n1 = _l1?.val || 0;
+    const n2 = _l2?.val || 0;
+    const sum = n1 + n2 + carry;
+    const newListNode = new ListNode(sum % 10);
+    current.next = newListNode;
+    current = current.next;
+    carry = sum >= 10 ? 1 : 0;
+
+    if (_l1) {
+      _l1 = _l1.next;
+    }
+    if (_l2) {
+      _l2 = _l2.next;
+    }
+  }
+  return dummyHead.next;
+}
+
+export function addTwoNumbers2(
+  l1: ListNode | null,
+  l2: ListNode | null
+): ListNode | null {
   const _n1: number[] = [];
   const _n2: number[] = [];
   let _l1 = l1;
@@ -38,3 +67,22 @@ export function addTwoNumbers(
   }
   return result;
 }
+
+// const l1 = new ListNode(2, new ListNode(4, new ListNode(3)));
+// const l2 = new ListNode(5, new ListNode(6, new ListNode(4)));
+// const l1 = new ListNode(0);
+// const l2 = new ListNode(0);
+
+const l1 = new ListNode(
+  9,
+  new ListNode(
+    9,
+    new ListNode(
+      9,
+      new ListNode(9, new ListNode(9, new ListNode(9, new ListNode(9))))
+    )
+  )
+);
+const l2 = new ListNode(9, new ListNode(9, new ListNode(9, new ListNode(9))));
+
+console.log(addTwoNumbers(l1, l2));
